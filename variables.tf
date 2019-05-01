@@ -22,3 +22,11 @@ variable "name" {
   description = "name to pass to Name tag"
   default     = "Provisioned by Terraform"
 }
+
+variable "ttl" {
+  description = "TTL tag to assign to instance"
+}
+
+variable "owner" {
+  description = "Ownert tag to assign to instance"
+}
