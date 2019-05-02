@@ -19,11 +19,11 @@ data "aws_ami" "latest" {
 resource "aws_instance" "ubuntu" {
   ami               = "${data.aws_ami.latest.id}"
   instance_type     = "${var.instance_type}"
-  availability_zone = "${var.aws_region}a"
+  availability_zone = "${var.aws_region}c"
 
   tags {
     Name  = "${var.name}"
-    TTL   = "${var.ttl}"
     Owner = "${var.owner}"
+    TTL   = "${var.ttl}"
   }
 }
