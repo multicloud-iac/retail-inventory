@@ -30,3 +30,4 @@ variable "ttl" {
 variable "owner" {
   description = "Ownert tag to assign to instance"
 }
+
