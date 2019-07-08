@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 variable "ami_owner" {
